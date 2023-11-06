@@ -1,8 +1,18 @@
 import Op, Debug from "@fluencelabs/aqua-lib/builtin.aqua"
 import Spell from "@fluencelabs/spell/spell_service.aqua"
 
+service FuzzyData("fuzzyData"):
+    noop() -> bool
+    write(window: []i32) -> bool
+
 func spell():
-    msg = "Spell is working!"
+    msg = "Spell is working, with noop"
+    
+    -- example to call a function on a js fluence peer
+    peer_id = "12D3KooWBvc15uURGGwY2ea3ZnZLYMZ1J8pYTLNxmwxcan1trEnG"
+    on peer_id:
+        res <- FuzzyData.noop()
+
     str <- Debug.stringify(msg)
     Spell "worker-spell"
     Spell.list_push_string("logs", str)

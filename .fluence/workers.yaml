@@ -8,17 +8,17 @@ version: 0
 
 hosts:
   defaultWorker:
-    definition: bafkreia7zuaunenscpwldvhdm5yuc4v6wmhyuejpz35kswkvs5lnmayala
+    definition: bafkreihbycihlwt5gtjn3koj4o6hyr66thgyqcsa5pbwgwemt5aitua22a
     installation_spells:
       - host_id: 12D3KooWFbasz6SnGxhPq3KWn8KgNW4asNKskxR5JizMdszM4KCN
-        spell_id: f7bc7a60-8d30-4fe7-9023-b6c4413e11d1
-        worker_id: 12D3KooWHh412LJB2MCNzzk4wUqeM1LGW2X4uZTaW7Yhc4EQDq71
+        spell_id: 3eff33e7-f7b6-4e41-a61f-abe45ad0946f
+        worker_id: 12D3KooWExUkNcHBWMLRzPUvcjTwsYQ9sumtUZqH9uPZWTT2jXor
       - host_id: 12D3KooWBCAWAGNMfqaBG1kUv49dkK8wSNeiTfGubLLjGQaFBf6z
-        spell_id: 51dbaf70-92fe-4774-8eeb-a3dfdcdcf591
-        worker_id: 12D3KooWA4PEzBtrrYHvhTjCcQv67uDpngayYTwWaSANG2Nui417
+        spell_id: 630de9e8-fbc8-4596-895e-8352075d12ae
+        worker_id: 12D3KooWS7HX2xE8dQ5qnq9wm16zP5NeKfq2XAiCagNCtpJnDBko
       - host_id: 12D3KooWEqbHHE1bzk1nJ8LE2Wbm2UaycYjRsSB4CTxDS342Boip
-        spell_id: 779a3670-b8b8-4f7a-a4e7-e813fd40b282
-        worker_id: 12D3KooWNdGNWVuadqTQkRH6iKQGDLZUP48H4PG51gGnWndYAowE
-    timestamp: 2023-11-05T20:33:05.293Z
+        spell_id: d6d577a6-1649-49a9-a060-5a35bad05cc6
+        worker_id: 12D3KooWAFt9QE5Cr8bTQN2qWX6RoPKMxKpupkGY6zCz3KggEh8z
+    timestamp: 2023-11-06T11:24:48.420Z
     relayId: 12D3KooWFbasz6SnGxhPq3KWn8KgNW4asNKskxR5JizMdszM4KCN
-    dummyDealId: defaultWorker_12D3KooWNe8E9vzJvYPn6k8TUAiGxCQDX57oEgPJs9fVnQq6NCv2_47699871019106665
+    dummyDealId: defaultWorker_12D3KooWNe8E9vzJvYPn6k8TUAiGxCQDX57oEgPJs9fVnQq6NCv2_07810164409693043

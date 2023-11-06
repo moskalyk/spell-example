@@ -2,7 +2,7 @@ aqua Main
 
 import "@fluencelabs/aqua-lib/builtin.aqua"
 import "@fluencelabs/aqua-lib/subnet.aqua"
-import Spell from "@fluencelabs/spell/spell_service.aqua"
+import Spell, StringListValue from "@fluencelabs/spell/spell_service.aqua"
 
 use "deals.aqua"
 use "hosts.aqua"
@@ -11,20 +11,23 @@ import "services.aqua"
 import SpellLocation from "hosts.aqua"
 
 -- IMPORTANT: Add exports for all functions that you want to run
-export helloWorld, getLogs
+export helloWorld, getLogs, FuzzyData
+
+service FuzzyData("fuzzyData"):
+    noop() -> bool
+    write(window: []i32) -> bool
 
 func getWorkerInfo() -> []SpellLocation:
     hosts <- Hosts.get()  
     <- hosts.defaultWorker!.installationSpells
 
-func getLogs() -> []bool:
+func getLogs() -> []StringListValue:
     workers <- getWorkerInfo()
-    results:  *bool
+    results: *StringListValue
     for w <- workers:
         on w.workerId via w.hostId:
             Spell "worker-spell"
-            res <- Spell.list_get_strings("logs")
-            results <- res.success -- this doesn't work
+            results <<- Spell.list_get_strings("logs")
     <- results
 
 -- local
